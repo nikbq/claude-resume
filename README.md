@@ -9,6 +9,10 @@ A powerful Claude Code chat history viewer that allows you to search through you
 - 🎯 **Resume Any Chat**: Get the exact command to resume any conversation - just copy and paste into your terminal
 - 🌐 **Web Interface**: Clean, responsive web UI accessible from any browser
 
+<img width="1440" height="810" alt="image" src="https://github.com/user-attachments/assets/1efc6868-589b-45a1-b426-665291409173" />
+
+
+
 ## Quick Start - No Installation Required
 
 These methods run directly without installation. The server starts immediately and opens your browser.
