@@ -347,8 +347,10 @@ class ChatHistoryHandler(SimpleHTTPRequestHandler):
                 if (currentSearchTerm && chat.searchMatch && chat.searchMatch.snippet) {
                     previewContent = `<div class="search-snippet">${highlightText(chat.searchMatch.snippet, currentSearchTerm)}</div>`;
                 } else {
-                    // Otherwise show the regular first message
-                    previewContent = `<div class="chat-preview">${escapeHtml(chat.firstMessage)}</div>`;
+                    // Show the regular first message, with highlighting if searching
+                    previewContent = currentSearchTerm ? 
+                        `<div class="chat-preview">${highlightText(chat.firstMessage, currentSearchTerm)}</div>` :
+                        `<div class="chat-preview">${escapeHtml(chat.firstMessage)}</div>`;
                 }
                 
                 return `
