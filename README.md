@@ -7,31 +7,48 @@ A powerful Claude Code chat history viewer that allows you to search through you
 - 🔍 **Search Through Chat History**: Search across all your Claude Code conversations
 - 📁 **Multi-Project View**: Load and view chats from multiple projects at once - run from home directory to see all projects in one place
 - 🎯 **Resume Any Chat**: Get the exact command to resume any conversation - just copy and paste into your terminal
-- ⚡ **Smart Filtering**: Filter by project, search by content, or find specific sessions
 - 🌐 **Web Interface**: Clean, responsive web UI accessible from any browser
 
-## Quick Start
+## Quick Start - No Installation Required
 
-### Installation
+These methods run directly without installation. The server starts immediately and opens your browser.
 
-#### Method 1: Using uvx (Recommended)
+### Method 1: Using uvx (Recommended if you have uv)
 ```bash
 uvx --from git+https://github.com/nikbq/claude-resume.git claude-resume
 ```
 
-#### Method 2: One-liner with curl
+### Method 2: One-liner with curl
 ```bash
 curl -s https://raw.githubusercontent.com/nikbq/claude-resume/main/run.py | python3
 ```
 
-#### Method 3: Using pip
+That's it! The browser will open automatically with your chat history.
+
+## Installation Method
+
+If you want to install Claude Resume permanently for repeated use, follow these steps:
+
+### Install Options
+
+#### Using pip
 ```bash
 pip install git+https://github.com/nikbq/claude-resume.git
 ```
 
-## Usage
+#### Using uv
+```bash
+uv pip install git+https://github.com/nikbq/claude-resume.git
+```
 
-Simply run:
+#### Using pipx (for isolated installation)
+```bash
+pipx install git+https://github.com/nikbq/claude-resume.git
+```
+
+### Usage After Installation
+
+Once installed, you can run:
 ```bash
 claude-resume
 ```
@@ -41,12 +58,7 @@ This will:
 2. Open your browser automatically
 3. Display all Claude chat history from `~/.claude/projects/`
 
-### Tips
-- Run from your home directory to view all projects at once
-- Use the search bar to find specific conversations
-- Click on any chat to view full conversation and get the resume command
-
-## Command Line Options
+### Command Line Options (for installed version only)
 
 ```bash
 claude-resume [options]
@@ -56,6 +68,11 @@ Options:
   --no-browser         Don't automatically open browser
   -h, --help           Show help message
 ```
+
+## Tips for Both Methods
+- Run from your home directory to view all projects at once
+- Use the search bar to find specific conversations
+- Click on any chat to view full conversation and get the resume command
 
 ## Resume Functionality
 
