@@ -11,6 +11,7 @@ A powerful Claude Code chat history viewer that allows you to search through you
 
 <img width="1440" height="810" alt="image" src="https://github.com/user-attachments/assets/1efc6868-589b-45a1-b426-665291409173" />
 
+<img width="1427" height="809" alt="image" src="https://github.com/user-attachments/assets/8a15be92-0a4d-4b1c-b3ba-0780b6ccfca1" />
 
 
 ## Quick Start - No Installation Required
